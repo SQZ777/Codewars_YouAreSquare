@@ -36,10 +36,14 @@ namespace Codewars_YouAreSquare
     {
         public static bool IsSquare(int n)
         {
-            if (n - 1 * n - 1 == n || n == 1)
+            for (int i = 1; i <= n / 2 + 1; i++)
             {
-                return true;
+                if (i * i == n)
+                {
+                    return true;
+                }
             }
+
             return false;
         }
     }
