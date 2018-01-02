@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Codewars_YouAreSquare
@@ -54,14 +55,7 @@ namespace Codewars_YouAreSquare
     {
         public static bool IsSquare(int n)
         {
-            for (int i = 1; i <= n / 2 + 1; i++)
-            {
-                if (i * i == n)
-                {
-                    return true;
-                }
-            }
-            return false;
+           return  Enumerable.Range(1, n / 2 + 1).Any(a => a * a == n);
         }
     }
 }
