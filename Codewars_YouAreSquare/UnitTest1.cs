@@ -23,6 +23,13 @@ namespace Codewars_YouAreSquare
         {
             Assert.IsFalse(Kata.IsSquare(2));
         }
+
+        [TestMethod]
+        public void Input_4_Should_Be_True()
+        {
+            Assert.IsTrue(Kata.IsSquare(4));
+        }
+
     }
 
     public class Kata
