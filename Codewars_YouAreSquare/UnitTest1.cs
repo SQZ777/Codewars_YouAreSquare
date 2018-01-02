@@ -6,8 +6,17 @@ namespace Codewars_YouAreSquare
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Input_0_Should_Be_False()
         {
+            Assert.IsFalse(Kata.IsSquare(0));
+        }
+    }
+
+    public class Kata
+    {
+        public static bool IsSquare(int n)
+        {
+            return false;
         }
     }
 }
