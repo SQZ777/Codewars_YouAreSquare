@@ -1,3 +1,4 @@
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Codewars_YouAreSquare
@@ -16,13 +17,19 @@ namespace Codewars_YouAreSquare
         {
             Assert.IsTrue(Kata.IsSquare(1));
         }
+
+        [TestMethod]
+        public void Input_2_Should_Be_False()
+        {
+            Assert.IsFalse(Kata.IsSquare(2));
+        }
     }
 
     public class Kata
     {
         public static bool IsSquare(int n)
         {
-            if (n > 0)
+            if (n - 1 * n - 1 == n || n == 1)
             {
                 return true;
             }
