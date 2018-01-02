@@ -55,6 +55,7 @@ namespace Codewars_YouAreSquare
     {
         public static bool IsSquare(int n)
         {
+            Math.Sqrt(1);
            return  Enumerable.Range(1, n / 2 + 1).Any(a => a * a == n);
         }
     }
