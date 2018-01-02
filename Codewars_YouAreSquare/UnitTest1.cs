@@ -30,6 +30,24 @@ namespace Codewars_YouAreSquare
             Assert.IsTrue(Kata.IsSquare(4));
         }
 
+        [TestMethod]
+        public void Input_5_Should_Be_False()
+        {
+            Assert.IsFalse(Kata.IsSquare(5));
+        }
+
+        [TestMethod]
+        public void Input_f1_Should_Be_False()
+        {
+            Assert.IsFalse(Kata.IsSquare(-1));
+        }
+
+        [TestMethod]
+        public void Input_36_Should_Be_True()
+        {
+            Assert.IsTrue(Kata.IsSquare(36));
+        }
+
     }
 
     public class Kata
@@ -43,7 +61,6 @@ namespace Codewars_YouAreSquare
                     return true;
                 }
             }
-
             return false;
         }
     }
